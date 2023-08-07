@@ -1,5 +1,15 @@
 # URL App:
+
 https://academia-bf787.web.app  or  https://academia-bf787.firebaseapp.com/
+
+# video app
+
+https://clipchamp.com/watch/tCoJm13ZMxo
+
+# description
+
+
+In this project I have focused only on the functional side of the application, the web design has been integrated only as necessary to perform these functionalities.
 
 # AcademiaApp
 
