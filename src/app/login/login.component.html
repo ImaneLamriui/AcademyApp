@@ -1,0 +1,21 @@
+<div>
+    <form action="" class="form-group row mt-5 mx-2" #miForm="ngForm" (ngSubmit)="login(miForm)">
+        <div class="form-group col-md-3"> 
+            <input type="email" name="email" placeholder="e-mail" class="form-control text-secondary" ngModel>
+        </div><br>
+        <div class="form-group col-md-3">
+            <input class="form-control text-secondary" type="password" name="password" placeholder="password" ngModel>
+            
+        </div><br>
+        <div>
+            <button type="submit" class="btn btn-success mt-5">
+            Login
+            </button>
+        
+        </div>
+
+
+
+
+    </form>
+</div>

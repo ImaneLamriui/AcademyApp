@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h1 style="text-align:center" class="">{{title}}</h1>
+  <br><br>
+  <form class="form-group row" action="">
+    
+    <div class="form-group col-md-4">
+      <label for="nombre">Module: </label>
+      <input type="text" name="nombre" id="nombre" placeholder="name" class="form-control" [(ngModel)]="nombreInput">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="lecciones">subjects: </label>
+      <input type="text" name="lecciones" id="lecciones" placeholder="subjects" class="form-control"
+        [(ngModel)]="lessonsInput">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="horas">total hours: </label>
+      <input type="text" name="horas" id="horas" placeholder="hours" class="form-control" [(ngModel)]="horasInput">
+    </div><br>
+    <div class="mt-5">
+      <button type="submit" class="btn btn-primary" (click)="agregarModulo()">Add Module</button></div>
+   </form>
+</div>
+<br><br><br>
+
+<app-materia class="" *ngFor="let modulo of modulos; let i=index" [moduloidentif]="modulo" [indice]="i"></app-materia>

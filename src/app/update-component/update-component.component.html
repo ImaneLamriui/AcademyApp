@@ -1,0 +1,26 @@
+<p>update-component works!</p>
+
+<form class="form-group row" action="">
+    <div class="form-group col-md-4">
+      <label for="nombre">Nombre Modulo: </label>
+       <input type="text" name="nombre" id="nombre" placeholder="nombre" class="form-control" [(ngModel)]="nombreInput">
+    </div><br>
+    <div class="form-group col-md-4">
+      <label for="lecciones">lecciones: </label>
+       <input type="text" name="lecciones" id="lecciones" placeholder="lecciones" class="form-control" [(ngModel)]="lessonsInput">
+    </div><br>
+    <div class="form-group col-md-4">
+      <label for="horas">Nombre Modulo: </label>
+       <input type="text" name="horas" id="horas" placeholder="horas" class="form-control" [(ngModel)]="horasInput">
+    </div><br>
+    <div class="col mt-5">
+        <button type="submit" class="btn btn-warning" (click)="updateModulo()">Acción</button>
+        <!-- <button type="submit" class="ms-4 btn btn-secondary" (click)="borrarModulo()">Borrar Modulo</button> -->
+    </div>
+  
+  </form>
+<div style="text-align: center">
+    <button class="mt-5 btn btn-primary" (click)="irAlHome()">
+    ir al Home
+    </button>
+</div>

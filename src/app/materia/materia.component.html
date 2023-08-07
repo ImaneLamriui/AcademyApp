@@ -1,0 +1,24 @@
+<div class="conainer">
+    <div class="row ms-5">
+      <div class="col">
+        <!-- Interpolacion {{modulo.nombre}} , routing-->
+        <div> {{indice+1}}: {{moduloidentif.nombre}} {{moduloidentif.lessons}} {{moduloidentif.horas}}
+          <a style="text-decoration:none;" [routerLink]='["/update", indice]' [queryParams]="{accion: 1}">Actualizar
+         
+         
+  
+        </a>
+        <a style="text-decoration:none;" [routerLink]='["/update", indice]' [queryParams]="{accion: 2}">Eliminar
+         
+         
+  
+        </a></div>
+          <!--  (click)="agregarDetalleMateria(nuevoDetalle.value)" -->
+        <!-- (DetalleMateria)="agregarDetalleMateria($event)" -->
+        <app-detalles-materia DetalleMateria ="agregarDetalleMateria($event)"></app-detalles-materia>
+        <ul style="list-style:none;">
+          <li *ngFor="let detalle of arrayDetalles">{{detalle}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
