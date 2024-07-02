@@ -1,0 +1,27 @@
+# Para la mayoría de los proyectos, este archivo de flujo de trabajo no necesitará cambios; simplemente necesitas
+# comprometerlo en tu repositorio.
+#
+# Puedes querer alterar este archivo para anular el conjunto de idiomas analizados,
+# o para proporcionar consultas personalizadas o lógica de compilación.
+#
+# ******** NOTA ********
+# Hemos intentado detectar los idiomas en tu repositorio. Por favor, verifica
+# la matriz `language` definida a continuación para confirmar que tienes el conjunto correcto de
+# idiomas compatibles con CodeQL.
+#
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '16 11 * * 2'
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    # El tamaño del corredor impacta el tiempo de análisis de CodeQL. Para aprender más, por favor visita:
+    #   - https://gh.io/recommended-hardware-resources-for-running-codeql
+    #   - https://gh.io
