@@ -40,10 +40,10 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{ matrix.language }}"
-    
-    # Paso para cargar los resultados del análisis en formato SARIF
+
     - name: Upload SARIF results
       uses: actions/upload-artifact@v4
       with:
         name: codeql-results
         path: ../codeql-failed-run.sarif
+
