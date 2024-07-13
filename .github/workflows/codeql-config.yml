@@ -1,4 +1,0 @@
-name: "CodeQL config"
-disableDefaultQueries: true
-queries:
-  - uses: codeql/javascript-queries@v1.0.0
