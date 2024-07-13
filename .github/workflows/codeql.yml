@@ -35,7 +35,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        config-file: .github/codeql-config.yml  # Asegúrate de tener este archivo en el repositorio
+        config-file: .github/codeql-config.yml
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
@@ -47,4 +47,3 @@ jobs:
       with:
         name: codeql-results
         path: ../results/javascript.sarif
-
