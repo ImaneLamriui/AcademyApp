@@ -4,9 +4,6 @@
 
 https://academia-bf787.web.app  or  https://academia-bf787.firebaseapp.com/
 
-# video app
-
-https://clipchamp.com/watch/tCoJm13ZMxo
 
 # description
 
