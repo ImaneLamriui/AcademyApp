@@ -28,22 +28,21 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4  # Asegúrate de usar la última versión v4
+      uses: actions/checkout@v4
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3  # Asegúrate de usar la última versión v3
+      uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
-        config-file: .github/codeql-config.yml
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3  # Asegúrate de usar la última versión v3
+      uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{ matrix.language }}"
-
+    
     - name: Upload SARIF results
-      uses: actions/upload-artifact@v4  # Asegúrate de usar la última versión v4
+      uses: actions/upload-artifact@v4
       with:
         name: codeql-results
-        path: ../results/javascript.sarif
+        path: ../codeql-failed-run.sarif
