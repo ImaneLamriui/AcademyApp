@@ -1,6 +1,6 @@
 name: "CodeQL config"
 disableDefaultQueries: true
 queries:
-  - uses: github/codeql/javascript-queries@v1
+  - uses: ./.github/codeql/javascript-queries@v1
 
 
